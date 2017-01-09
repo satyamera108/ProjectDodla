@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">DODLA DAIRY</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="config_fragment">Configuration Screen</string>
+
+
+    <string-array name="analyzer_baudrate">
+        <item>1200</item>
+        <item>2400</item>
+        <item>4800</item>
+        <item>19200</item>
+    </string-array>
+
+    <string-array name="weight_baudrate">
+        <item>1200</item>
+        <item>2400</item>
+        <item>4800</item>
+        <item>9600</item>
+        <item>19200</item>
+    </string-array>
+
+    <string-array name="print_baudrate">
+        <item>1200</item>
+        <item>2400</item>
+        <item>4800</item>
+        <item>9600</item>
+        <item>19200</item>
+    </string-array>
+
+    <string-array name="milk_type">
+        <item>COW</item>
+        <item>BUFFALO</item>
+        <item>MIXED</item>
+    </string-array>
+
+    <string-array name="role_select">
+        <item>Admin</item>
+        <item>CC Point</item>
+        <item>Satya</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/milk_data"
+            android:icon="@drawable/ic_add_circle_outline_white_24px"
+            android:title="Add Milk Data" />
+        <item
+            android:id="@+id/saved_data"
+            android:icon="@drawable/ic_save_white_24px"
+            android:title="Saved Data" />
+        <item
+            android:id="@+id/farmer_reg"
+            android:icon="@drawable/ic_create_white_24px"
+            android:title="Farmer Registration" />
+        <item
+            android:id="@+id/dev_congfig"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Configution" />
+        <item
+            android:id="@+id/rate_chart"
+            android:icon="@drawable/ic_rupee_indian"
+            android:title="Rate Chart" />
+
+    </group>
+
+    <item android:title="Support">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_settings"
+                android:title="Troubleshoot" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_contacts"
+                android:title="Contact" />
+        </menu>
+    </item>
+
+</menu>

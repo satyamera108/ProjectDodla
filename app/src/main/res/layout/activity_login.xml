@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Username"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvUname"
+        android:layout_x="61dp"
+        android:layout_y="137dp"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/role_select"
+        android:layout_alignStart="@+id/tvRole" />
+
+    <TextView
+        android:text="Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPwd"
+        android:layout_alignBaseline="@+id/pwd_input"
+        android:layout_alignBottom="@+id/pwd_input"
+        android:layout_alignStart="@+id/tvUname" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/pwd_input"
+        android:cursorVisible="true"
+        android:contextClickable="true"
+        android:layout_below="@+id/uname_input"
+        android:layout_alignStart="@+id/uname_input"
+        android:layout_marginTop="22dp"
+        android:layout_alignEnd="@+id/uname_input" />
+
+    <Button
+        android:text="Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pwd_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:id="@+id/login_button" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/role_select"
+        android:entries="@array/role_select"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignTop="@+id/tvRole"
+        android:layout_toEndOf="@+id/tvUname"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:text="Role"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="59dp"
+        android:layout_y="83dp"
+        android:id="@+id/tvRole"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="101dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/uname_input"
+        android:layout_x="187dp"
+        android:layout_y="69dp"
+        android:layout_alignBaseline="@+id/tvUname"
+        android:layout_alignBottom="@+id/tvUname"
+        android:layout_alignStart="@+id/role_select" />
+
+</RelativeLayout>

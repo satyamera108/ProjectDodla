@@ -1,0 +1,219 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.saksham.satyam.navigationdrawerexample.Test">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/tvMilkType"
+        android:id="@+id/spinner"
+        android:layout_alignTop="@+id/tvMilkType"
+        android:entries="@array/milk_type"
+        android:layout_marginLeft="180dp"
+        android:layout_marginRight="30dp"
+         />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:id="@+id/Output"
+        android:layout_below="@+id/pushdata"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvWeight"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/tvMilkType"
+        android:layout_alignStart="@+id/tvMilkType" />
+
+    <TextView
+        android:text="Weighing Scale Output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Weight_Input"
+        android:layout_alignBaseline="@+id/tvWeight"
+        android:layout_alignBottom="@+id/tvWeight"
+        android:layout_alignStart="@+id/Fname"
+        android:layout_toStartOf="@+id/deleteButton"
+        android:layout_alignEnd="@+id/Fname" />
+
+
+    <Button
+        android:text="Delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deleteButton"
+        android:onClick="deleteButtonClicked"
+        android:layout_alignBaseline="@+id/addButton"
+        android:layout_alignBottom="@+id/addButton"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Push Data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/deleteButton"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/pushdata" />
+
+    <TextView
+        android:text="FAT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:id="@+id/tvFAT"
+        android:layout_below="@+id/tvWeight"
+        android:layout_alignStart="@+id/tvWeight" />
+
+    <TextView
+        android:text="Milk Type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMilkType"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/Fname"
+        android:layout_alignStart="@+id/tvFarmName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fat_input"
+        android:layout_marginLeft="10dp"
+        android:text="3.8"
+        android:layout_alignBaseline="@+id/tvFAT"
+        android:layout_alignBottom="@+id/tvFAT"
+        android:layout_alignEnd="@+id/addButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSNF"
+        android:text="SNF"
+        android:layout_alignBaseline="@+id/fat_input"
+        android:layout_alignBottom="@+id/fat_input"
+        android:layout_alignStart="@+id/pushdata" />
+
+    <TextView
+        android:text="20.5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/snf_input"
+        android:layout_alignBaseline="@+id/tvSNF"
+        android:layout_alignBottom="@+id/tvSNF"
+        android:layout_alignEnd="@+id/pushdata" />
+
+    <TextView
+        android:text="CLR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCLR"
+        android:layout_alignBaseline="@+id/snf_input"
+        android:layout_alignBottom="@+id/snf_input"
+        android:layout_alignStart="@+id/deleteButton" />
+
+    <TextView
+        android:text="34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clr_input"
+        android:layout_alignBaseline="@+id/tvCLR"
+        android:layout_alignBottom="@+id/tvCLR"
+        android:layout_alignEnd="@+id/Weight_Input" />
+
+    <Button
+        android:text="Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addButton"
+        android:onClick="addButtonClicked"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="82dp" />
+
+    <TextView
+        android:text="20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/amount_output"
+        android:layout_alignBaseline="@+id/tvAmount"
+        android:layout_alignBottom="@+id/tvAmount"
+        android:layout_toEndOf="@+id/addButton" />
+
+    <TextView
+        android:text="10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rate_chart_input"
+        android:layout_alignBaseline="@+id/tvRate"
+        android:layout_alignBottom="@+id/tvRate"
+        android:layout_toEndOf="@+id/fat_input" />
+
+    <TextView
+        android:text="Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvAmount"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/tvRate"
+        android:layout_alignStart="@+id/tvRate" />
+
+    <TextView
+        android:text="Farmer Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvFarmerCode"
+        android:layout_alignTop="@+id/Fcode"
+        android:layout_alignEnd="@+id/rate_chart_input"
+        android:layout_alignBottom="@+id/Fcode" />
+
+    <TextView
+        android:text="Farmer Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvFarmName"
+        android:layout_alignTop="@+id/Fname"
+        android:layout_alignStart="@+id/tvFarmerCode"
+        android:layout_above="@+id/tvMilkType" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/Fcode"
+        android:layout_height="20dp"
+        android:layout_marginTop="27dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/tvFarmName"
+        android:layout_marginStart="12dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/Fname"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/Fcode"
+        android:layout_alignStart="@+id/Fcode" />
+
+    <TextView
+        android:text="Rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvRate"
+        android:layout_below="@+id/tvFAT"
+        android:layout_alignStart="@+id/tvFAT"
+        android:layout_marginTop="28dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.saksham.satyam.navigationdrawerexample.DevConfig">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:text="Analyzer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="55dp"
+        android:id="@+id/tvAnalyzer" />
+
+    <TextView
+        android:text="Weighing Scale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAnalyzer"
+        android:layout_alignStart="@+id/tvAnalyzer"
+        android:layout_marginTop="60dp"
+        android:id="@+id/tvWeight" />
+
+    <TextView
+        android:text="Printer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvWeight"
+        android:layout_alignStart="@+id/tvWeight"
+        android:layout_marginTop="65dp"
+        android:id="@+id/tvPrinter" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvAnalyzer"
+        android:id="@+id/analyzer_spinner"
+        android:layout_alignBottom="@+id/tvAnalyzer"
+        android:entries="@array/analyzer_baudrate"
+        android:layout_marginLeft="180dp"
+        android:layout_marginRight="30dp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/weight_spinner"
+        android:entries="@array/weight_baudrate"
+        android:layout_marginLeft="180dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignBottom="@+id/tvWeight"
+        android:layout_alignTop="@+id/tvWeight" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/printer_spinner"
+        android:entries="@array/print_baudrate"
+        android:layout_marginLeft="180dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignTop="@+id/tvPrinter" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:text="@string/config_fragment"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView3" />
+
+</RelativeLayout>

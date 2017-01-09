@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.saksham.satyam.navigationdrawerexample.FarmerReg">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:text="Farmer Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvfcodereg"
+        android:layout_marginEnd="26dp"
+        android:layout_alignBottom="@+id/FcodeReg"
+        android:layout_toStartOf="@+id/FcodeReg"
+        android:layout_alignTop="@+id/FcodeReg" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/FcodeReg"
+        android:layout_marginTop="39dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Farmer Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvfcodereg"
+        android:layout_alignStart="@+id/tvfcodereg"
+        android:layout_marginTop="24dp"
+        android:id="@+id/tvfnamereg" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/FnameReg"
+        android:layout_alignBottom="@+id/tvfnamereg"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/tvfnamereg" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:text="Farmer Registration"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
